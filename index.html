@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="calc__wrap">
+
+    <div class="container">
+      <div class="calc">
+        <div class="calc__head">
+          <div class="calc__title">
+            Шаг 1: введите параметры здания
+          </div>
+
+          <div class="calc__nav">
+            <ul class="calc__inner">
+
+              <li class="calc__item">
+                <a href="#" class="calc__link active">1 <span class="block">шаг</span></a>
+              </li>
+
+              <li class="calc__item">
+                <a href="#" class="calc__link">2 <span class="block">шаг</span></a>
+              </li>
+
+              <li class="calc__item">
+                <a href="#" class="calc__link">3 <span class="block">шаг</span></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="calc__body">
+          <div class="calc__body-container">
+            <p class="calc__body-title">Выберите габариты здания</p>
+
+            <div class="calc__flex">
+              <label for="cWidth">
+                Ширина (м):
+                <input type="text" id="cWidth" placeholder="48" value="48">
+                <input type="hidden" id="cWidthh" placeholder="48" value="48">
+              </label>
+
+              <label for="cLength">
+                Длина (м):
+                <input type="text" id="cLength" placeholder="96" value="96">
+                <input type="hidden" id="cLengthh" placeholder="96" value="96">
+              </label>
+
+              <label for="cHeight">
+                Высота (м):
+                <input type="text" id="cHeight" placeholder="6" value="6">
+                <input type="hidden" id="cHeighth" placeholder="6" value="6">
+              </label>
+
+              <label for="cSquare">
+                Обьем (м3):
+                <input type="text" id="cSquare" readonly placeholder="27648" value="27648">
+
+              </label>
+              <input type="text">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>
